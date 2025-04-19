@@ -44,7 +44,7 @@ function PayViaWebLN() {
     <div>
       <form onSubmit={handlePayment} className="space-y-4">
         <div>
-          <label htmlFor="lnAddress" className="block mb-2 text-sm font-medium">
+          <label htmlFor="lnAddress" className="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-700">
             Lightning Address
           </label>
           <input
@@ -58,7 +58,7 @@ function PayViaWebLN() {
         </div>
         
         <div>
-          <label htmlFor="amount" className="block mb-2 text-sm font-medium">
+          <label htmlFor="amount" className="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-700">
             Amount (sats)
           </label>
           <input

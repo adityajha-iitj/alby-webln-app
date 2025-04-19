@@ -80,7 +80,7 @@ function SatsConverter() {
       )}
       
       <div>
-        <label htmlFor="sats" className="block mb-2 text-sm font-medium">
+        <label htmlFor="sats" className="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-700">
           Satoshis
         </label>
         <input
@@ -90,7 +90,7 @@ function SatsConverter() {
           value={sats}
           onChange={(e) => handleSatsChange(e.target.value)}
           placeholder="1000"
-          className="w-full p-2 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-600"
+          className="w-full p-2 border border-gray-300 rounded dark:bg-gray-700 text-gray-300 dark:border-gray-600"
         />
       </div>
       
@@ -102,7 +102,7 @@ function SatsConverter() {
       
       <div className="flex space-x-2">
         <div className="flex-1">
-          <label htmlFor="fiat" className="block mb-2 text-sm font-medium">
+          <label htmlFor="fiat" className="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-700">
             Fiat Amount
           </label>
           <input
@@ -113,12 +113,12 @@ function SatsConverter() {
             value={fiat}
             onChange={(e) => handleFiatChange(e.target.value)}
             placeholder="1.00"
-            className="w-full p-2 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-600"
+            className="w-full p-2 border border-gray-300 rounded dark:bg-gray-700 text-gray-300 dark:border-gray-600"
           />
         </div>
         
         <div className="w-24">
-          <label htmlFor="currency" className="block mb-2 text-sm font-medium">
+          <label htmlFor="currency" className="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-700">
             Currency
           </label>
           <select

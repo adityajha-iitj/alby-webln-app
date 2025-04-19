@@ -61,7 +61,7 @@ function QRScanner() {
       const checkVideoFrame = () => {
         if (!videoRef.current || !scanning) return;
         
-        const video = videoRef.current;
+        const video = videoRef.current; // Get the video element from the ref
         
         if (video.readyState === video.HAVE_ENOUGH_DATA) {
           // Set canvas dimensions to match video
@@ -99,8 +99,8 @@ function QRScanner() {
       };
       
       // Start the scanning process
-      video.onloadedmetadata = () => {
-        video.play();
+      videoRef.current.onloadedmetadata = () => {
+        videoRef.current.play();
         requestAnimationFrame(checkVideoFrame);
       };
       

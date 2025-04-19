@@ -64,7 +64,7 @@ function AutoPayment() {
   return (
     <div>
       <div className="mb-4">
-        <label htmlFor="destinationNode" className="block mb-2 text-sm font-medium">
+        <label htmlFor="destinationNode" className="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-700">
           Recipient Node Public Key
         </label>
         <input
@@ -90,7 +90,7 @@ function AutoPayment() {
           {enabled ? 'Disable Auto-Payment' : 'Enable Auto-Payment'}
         </button>
         
-        <div className="text-sm">
+        <div className="text-sm ml-8">
           <p>Scroll Events: {scrollEvents}</p>
           <p>Payments Made: {paymentsMade}</p>
         </div>
@@ -114,7 +114,7 @@ function AutoPayment() {
         className="border border-gray-300 rounded h-64 overflow-auto p-4 dark:border-gray-600"
       >
         <div className="h-96">
-          <h3 className="text-lg font-medium mb-2">Scroll in this area to trigger payments</h3>
+          <h3 className="text-lg font-medium mb-2 text-gray-700 dark:text-gray-700">Scroll in this area to trigger payments</h3>
           <p className="mb-4">When auto-payment is enabled, scrolling in this box will send 1 sat to the specified node.</p>
           <p className="mb-4">A cooldown period of 3 seconds is enforced between payments to prevent excessive spending.</p>
           <p className="mb-4">This is just a demonstration of how WebLN can be integrated with user interactions.</p>

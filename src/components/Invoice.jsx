@@ -54,7 +54,7 @@ function Invoice() {
     <div>
       <form onSubmit={handleMakeInvoice} className="space-y-4">
         <div>
-          <label htmlFor="amount" className="block mb-2 text-sm font-medium">
+          <label htmlFor="amount" className="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-700">
             Amount (sats)
           </label>
           <input
@@ -69,7 +69,7 @@ function Invoice() {
         </div>
         
         <div>
-          <label htmlFor="description" className="block mb-2 text-sm font-medium">
+          <label htmlFor="description" className="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-700">
             Description
           </label>
           <input
@@ -104,8 +104,8 @@ function Invoice() {
       {invoice && invoice.paymentRequest && (
         <div className="mt-4 space-y-4">
           <div className="bg-gray-100 p-4 rounded dark:bg-gray-700">
-            <div className="text-sm font-medium mb-2">Invoice</div>
-            <div className="break-all text-xs">{invoice.paymentRequest}</div>
+            <div className="text-sm font-medium mb-2 text-gray-300">Invoice</div>
+            <div className="break-all text-xs text-gray-700 dark:text-gray-300">{invoice.paymentRequest}</div>
           </div>
           
           <div className="flex justify-center mb-4">

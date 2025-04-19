@@ -41,7 +41,7 @@ function Keysend() {
     <div>
       <form onSubmit={handleKeysend} className="space-y-4">
         <div>
-          <label htmlFor="destination" className="block mb-2 text-sm font-medium">
+          <label htmlFor="destination" className="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-700">
             Destination Node Public Key
           </label>
           <input
@@ -55,7 +55,7 @@ function Keysend() {
         </div>
         
         <div>
-          <label htmlFor="amount" className="block mb-2 text-sm font-medium">
+          <label htmlFor="amount" className="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-700">
             Amount (sats)
           </label>
           <input
@@ -70,7 +70,7 @@ function Keysend() {
         </div>
         
         <div>
-          <label htmlFor="message" className="block mb-2 text-sm font-medium">
+          <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-700">
             Message (optional)
           </label>
           <input
