@@ -38,7 +38,7 @@ function SendPayment() {
     <div>
       <form onSubmit={handleSendPayment} className="space-y-4">
         <div>
-          <label htmlFor="invoice" className="block mb-2 text-sm font-medium">
+          <label htmlFor="invoice" className="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-700">
             Lightning Invoice
           </label>
           <textarea
